@@ -10,6 +10,9 @@ The main goal of this work is to demonstrate how to harness the power of cloud-c
 - AMBER [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/Amber.ipynb) 
 - CHARMM [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/CHARMM_GUI.ipynb) - `Using CHARMM-GUI solution builder inputs`
 
+![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/fluxogram_gh.png)
+
+
 ## Bugs
 - If you encounter any bugs, please report the issue to https://github.com/pablo-arantes/Making-it-rain/issues
 
