@@ -7,7 +7,7 @@ This is a repository where you can find a Jupyter notebook scripts for running M
 
 The main goal of this work is to demonstrate how to harness the power of cloud-computing to run microsecond-long MD simulations in a cheap and yet feasible fashion.
 
-- [AMBER]() 
+- [AMBER](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/Amber.ipynb) 
 - [CHARMM](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/CHARMM_GUI.ipynb) - `Using CHARMM-GUI solution builder feature`
 
 **Bugs**
