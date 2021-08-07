@@ -9,7 +9,7 @@ The main goal of this work is to demonstrate how to harness the power of cloud-c
 
 - AMBER [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/Amber.ipynb) 
 - CHARMM [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/CHARMM_GUI.ipynb) - `Using CHARMM-GUI solution builder inputs`
-- AlphaFold2+MD [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/AlphaFold2%2BMD.ipynb) - `Using AlphaFold2_mmseqs2 to build the model and run a molecular dynamics simulation`
+- AlphaFold2+MD [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/AlphaFold2%2BMD.ipynb) - `Using AlphaFold2_mmseqs2 to build the model and run a molecular dynamics simulation with AMBER force field`
 ![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/fluxogram_gh.png)
 
 
