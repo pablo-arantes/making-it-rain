@@ -1,0 +1,21 @@
+source leaprc.protein.ff19SB
+source leaprc.DNA.OL15
+source leaprc.RNA.OL3
+source leaprc.GLYCAM_06j-1 
+source leaprc.lipid17
+source leaprc.gaff2
+source leaprc.water.opc
+SYS = loadpdb /content/drive/MyDrive/Colab_OpenMM/long_run/starting.pdb
+alignaxes SYS
+check SYS 
+charge SYS
+addions SYS Na+ 0
+addions2 SYS Cl- 0
+check SYS
+charge SYS
+savepdb SYS /content/drive/MyDrive/Colab_OpenMM/long_run/SYS_nw.pdb
+saveamberparm SYS /content/drive/MyDrive/Colab_OpenMM/long_run/SYS_nw.prmtop /content/drive/MyDrive/Colab_OpenMM/long_run/SYS_nw.crd
+solvatebox SYS TIP3PBOX 12 0.7
+saveamberparm SYS /content/drive/MyDrive/Colab_OpenMM/long_run/SYS.prmtop /content/drive/MyDrive/Colab_OpenMM/long_run/SYS.crd
+savepdb SYS /content/drive/MyDrive/Colab_OpenMM/long_run/SYS.pdb
+quit
