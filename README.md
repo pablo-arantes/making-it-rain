@@ -1,6 +1,8 @@
 # Making-it-rain
  Cloud-based molecular simulations for everyone
 
+![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/GraphAbs.png)
+
 ## Hello there!
 
 This is a repository where you can find a Jupyter notebook scripts for running Molecular Dynamics (MD) simulations using OpenMM engine and AMBER and CHARMM force fields files on Google Colab. This repository is a supplementary material of the paper "***Making it rain: Cloud-based molecular simulations for everyone***" and we encourage you to read it before using this pipeline.
