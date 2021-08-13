@@ -29,4 +29,4 @@ The main goal of this work is to demonstrate how to harness the power of cloud-c
 
 ## Do you want to cite this work?
 
-[![DOI](https://zenodo.org/badge/393463171.svg)](https://zenodo.org/badge/latestdoi/393463171)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5196783.svg)](https://doi.org/10.5281/zenodo.5196783)
