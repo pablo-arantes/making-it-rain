@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+# Making-it-rain
+ Cloud-based molecular simulations for everyone
 
-You can use the [editor on GitHub](https://github.com/pablo-arantes/Making-it-rain/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/GraphAbs.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Hello there!
 
-### Markdown
+This is a repository where you can find a Jupyter notebook scripts for running Molecular Dynamics (MD) simulations using OpenMM engine and AMBER and CHARMM force fields files on Google Colab. This repository is a supplementary material of the paper "***Making it rain: Cloud-based molecular simulations for everyone***" and we encourage you to read it before using this pipeline.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The main goal of this work is to demonstrate how to harness the power of cloud-computing to run microsecond-long MD simulations in a cheap and yet feasible fashion.
 
-```markdown
-Syntax highlighted code block
+- **AMBER** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/Amber.ipynb)  - `Using AMBER to generate topology and to build the simulation box`
+- **CHARMM** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/CHARMM_GUI.ipynb) - `Using inputs from CHARMM-GUI solution builder`
+- **AlphaFold2+MD** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/AlphaFold2%2BMD.ipynb) - `Using AlphaFold2_mmseqs2 to generate protein model + MD simulation using AMBER to generate topology and to build simulation box`
 
-# Header 1
-## Header 2
-### Header 3
+![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/fluxogram_gh.png)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## Bugs
+- If you encounter any bugs, please report the issue to https://github.com/pablo-arantes/Making-it-rain/issues
 
-**Bold** and _Italic_ and `Code` text
+## Acknowledgments
 
-[Link](url) and ![Image](src)
-```
+- We would like to thank the OpenMM team for developing an excellent and open source engine. 
+- We would like to thank the AlphaFold team for developing an excellent model and open sourcing the software. 
+- Credit to Sergey Ovchinnikov ([@sokrypton](https://twitter.com/sokrypton)), Milot Mirdita ([@milot_mirdita](https://twitter.com/milot_mirdita)) and Martin Steinegger ([@thesteinegger](https://twitter.com/thesteinegger)) for their fantastic [ColabFold](https://github.com/sokrypton/ColabFold)
+- A Making it rain by **Pablo R. Arantes** ([@pablitoarantes](https://twitter.com/pablitoarantes)), **Marcelo D. Polêto** ([@mdpoleto](https://twitter.com/mdpoleto)), **Conrado Pedebos** ([@ConradoPedebos](https://twitter.com/ConradoPedebos)) and **Rodrigo Ligabue-Braun** ([@ligabue_braun](https://twitter.com/ligabue_braun)).
+- Also, credit to [David Koes](https://github.com/dkoes) for his awesome [py3Dmol](https://3dmol.csb.pitt.edu/) plugin.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Do you want to cite this work?
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pablo-arantes/Making-it-rain/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Arantes P.R., Depólo Polêto M., Pedebos C., Ligabue-Braun R. Making it rain: cloud-based molecular simulations for everyone. 
+ChemRxiv. doi: [10.33774/chemrxiv-2021-9f2m5](https://doi.org/10.33774/chemrxiv-2021-9f2m5) (2021).
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5196783.svg)](https://doi.org/10.5281/zenodo.5196783)
+##
+<a href="https://trackgit.com">
+<img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/ksghbo50inl9a2at7yks" alt="trackgit-views" />
+</a>
