@@ -35,6 +35,3 @@ ChemRxiv. doi: [10.33774/chemrxiv-2021-9f2m5](https://doi.org/10.33774/chemrxiv-
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5196783.svg)](https://doi.org/10.5281/zenodo.5196783)
 ##
-<a href="https://trackgit.com">
-<img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/ksghbo50inl9a2at7yks" alt="trackgit-views" />
-</a>
