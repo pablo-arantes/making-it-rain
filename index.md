@@ -1,7 +1,7 @@
 # Making-it-rain
  Cloud-based molecular simulations for everyone
 
-![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/GraphAbs.png)
+![alt text](GraphAbs.png)
 
 ## Hello there!
 
