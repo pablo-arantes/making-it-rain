@@ -13,9 +13,6 @@ The main goal of this work is to demonstrate how to harness the power of cloud-c
 - **CHARMM** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/CHARMM_GUI.ipynb) - `Using inputs from CHARMM-GUI solution builder`
 - **AlphaFold2+MD** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/AlphaFold2%2BMD.ipynb) - `Using AlphaFold2_mmseqs2 to generate protein model + MD simulation using AMBER to generate topology and to build simulation box`
 
-![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/fluxogram_gh.png)
-
-
 ## Bugs
 - If you encounter any bugs, please report the issue to https://github.com/pablo-arantes/Making-it-rain/issues
 
