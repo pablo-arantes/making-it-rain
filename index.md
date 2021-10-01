@@ -28,7 +28,7 @@ The main goal of this work is to demonstrate how to harness the power of cloud-c
 
 
 Arantes P.R., Depólo Polêto M., Pedebos C., Ligabue-Braun R. Making it rain: cloud-based molecular simulations for everyone. 
-ChemRxiv. doi: [10.33774/chemrxiv-2021-9f2m5](https://doi.org/10.33774/chemrxiv-2021-9f2m5) (2021).
+Journal of Chemical Information and Modeling 2021. doi: [10.1021/acs.jcim.1c00998](https://doi.org/10.1021/acs.jcim.1c00998).
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5196783.svg)](https://doi.org/10.5281/zenodo.5196783)
 
