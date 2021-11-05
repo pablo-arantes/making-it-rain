@@ -8,16 +8,16 @@ Welcome to Making it rain page, here you can find a Jupyter notebook scripts for
 
 The main goal of this work is to demonstrate how to harness the power of cloud-computing to run microsecond-long MD simulations in a cheap and yet feasible fashion.
 
-- **AMBER** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/Amber.ipynb)  - `Using AMBER to generate topology and to build the simulation box`
-- **CHARMM** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/CHARMM_GUI.ipynb) - `Using inputs from CHARMM-GUI solution builder`
-- **AlphaFold2+MD** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/AlphaFold2%2BMD.ipynb) - `Using AlphaFold2_mmseqs2 to generate protein model + MD simulation using AMBER to generate topology and to build simulation box`
+1. **AMBER** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/Amber.ipynb)  - `Using AMBER to generate topology and to build the simulation box`
+2. **CHARMM** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/CHARMM_GUI.ipynb) - `Using inputs from CHARMM-GUI solution builder`
+3. **AlphaFold2+MD** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/AlphaFold2%2BMD.ipynb) - `Using AlphaFold2_mmseqs2 to generate protein model + MD simulation using AMBER to generate topology and to build simulation box`
 
 
 **UPDATE (Oct 18 2021)**
 
-- **Protein-Ligand simulations** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Protein_ligand.ipynb)  - `Using AMBER to generate topology and to build the simulation box and for the ligand using GAFF2 or OpenFF force fields`
-- **Using AMBER Inputs** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Amber_inputs.ipynb)  - `Using inputs from AMBER suite of biomolecular simulation program`
-- **Using GROMACS Inputs** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Gromacs_inputs.ipynb)  - `Using inputs from GROMACS biomolecular simulation package (AMBER, CHARMM and OPLS force fields are compatible)`
+4. **Protein-Ligand simulations** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Protein_ligand.ipynb)  - `Using AMBER to generate topology and to build the simulation box and for the ligand using GAFF2 or OpenFF force fields`
+5. **Using AMBER Inputs** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Amber_inputs.ipynb)  - `Using inputs from AMBER suite of biomolecular simulation program`
+6. **Using GROMACS Inputs** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Gromacs_inputs.ipynb)  - `Using inputs from GROMACS biomolecular simulation package (AMBER, CHARMM and OPLS force fields are compatible)`
 
 ## Bugs
 - If you encounter any bugs, please report the issue [here](https://github.com/pablo-arantes/Making-it-rain/issues).
