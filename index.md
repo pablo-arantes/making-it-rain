@@ -12,18 +12,25 @@ The main goal of this work is to demonstrate how to harness the power of cloud-c
 2. **CHARMM** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/CHARMM_GUI.ipynb) - `Using inputs from CHARMM-GUI solution builder`
 3. **AlphaFold2+MD** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/AlphaFold2%2BMD.ipynb) - `Using AlphaFold2_mmseqs2 to generate protein model + MD simulation using AMBER to generate topology and to build simulation box`
 
-
-**UPDATE (Oct 18 2021)**
+**UPDATE (October 2021)**
 
 4. **Protein-Ligand simulations** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Protein_ligand.ipynb)  - `Using AMBER to generate topology and to build the simulation box and for the ligand using GAFF2 or OpenFF force fields`
 5. **Using AMBER Inputs** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Amber_inputs.ipynb)  - `Using inputs from AMBER suite of biomolecular simulation program`
 6. **Using GROMACS Inputs** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Gromacs_inputs.ipynb)  - `Using inputs from GROMACS biomolecular simulation package (AMBER, CHARMM and OPLS force fields are compatible)`
+
+**UPDATE (March 2022)**
+
+7. **RESP Partial Charges** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Partial_Charges.ipynb)  - `Using a SMILES as input and outputs a mol2 file with RESP derived partial charges. Options for setting method (HF, B3LYP, ...), basis set (3-21G, 6-31G*) and singlepoint or geometry optimization are available.`
+8. **Small Molecules MD** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/MD_Small_Molecules.ipynb)  - `Using a SMILES as a input, calculates RESP derived partial charges and uses these charges on topology generation (GAFF2 force field).`
+9. **GLYCAM** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Glycam.ipynb)  - `Using inputs from GLYCAM server.`
+
 
 ## Bugs
 - If you encounter any bugs, please report the issue [here](https://github.com/pablo-arantes/Making-it-rain/issues).
 
 ## Acknowledgments
 
+- We would like to thank the [Psi4](https://psicode.org/) team for developing an excellent and open source suite of ab initio quantum chemistry.
 - We would like to thank the OpenMM team for developing an excellent and open source engine. 
 - We would like to thank the AlphaFold team for developing an excellent model and open sourcing the software. 
 - We would like to thank the ChemosimLab ([@ChemosimLab](https://twitter.com/ChemosimLab)) team for their incredible [ProLIF](https://prolif.readthedocs.io/en/latest/index.html#) (Protein-Ligand Interaction Fingerprints) tool.
