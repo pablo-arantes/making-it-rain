@@ -1,25 +1,3 @@
-prot_pos.txt
-Who has access
-System properties
-Type
-Text
-Size
-4 KB
-Storage used
-4 KB
-Location
-additive
-Owner
-me
-Modified
-5:39 PM by me
-Opened
-11:45 PM by me
-Created
-5:45 PM with Google Drive Web
-Add a description
-Viewers can download
-
 0 BB
 4 BB
 17 BB
@@ -622,4 +600,3 @@ Viewers can download
 1211 SC
 1229 SC
 1230 SC
-
