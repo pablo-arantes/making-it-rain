@@ -9,7 +9,7 @@ This is a repository where you can find a Jupyter notebook scripts for running M
 
 The main goal of this work is to demonstrate how to harness the power of cloud-computing to run microsecond-long MD simulations in a cheap and yet feasible fashion.
 
-**Important**: We've updated all notebooks to [CondaColab](https://github.com/conda-incubator/condacolab). Now, all the dependencies will be installed faster than before. You will see a CondaColab cell just run and wait a few seconds, the session will restart and it's normal. We believe that is a huge step to spread the notebook for everyone. Thank you for your support.
+**Important**: We've updated all notebooks to [CondaColab](https://github.com/conda-incubator/condacolab). Now, all the dependencies will be installed faster than before (less than half of the previous time). You will see a CondaColab cell, just run and wait a few seconds, the session will restart and it's normal. We believe that is a huge step to spread the notebook for everyone. Thank you for your support.
 
 1. **AMBER** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/Amber.ipynb)  - `Using AMBER to generate topology and to build the simulation box`
 2. **CHARMM** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/Making-it-rain/blob/main/CHARMM_GUI.ipynb) - `Using inputs from CHARMM-GUI solution builder`
