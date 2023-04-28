@@ -1,12 +1,12 @@
 # Making-it-rain
  Cloud-based molecular simulations for everyone
 
+```diff
+- 28Apr2023: OpenMM is not working in our Notebook due to Colab update, we are working to fix it
+```
+
 ![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/GraphAbs.png)
 
-
-```diff
-- 29Apr2023: OpenMM is not working in our Notebook due to Colab update
-```
 
 ## Hello there!
 
