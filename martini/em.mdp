@@ -1,0 +1,19 @@
+integrator               = steep
+nsteps                   = 1000
+nstxout                  = 0
+nstfout                  = 0
+nstlog                   = 100 
+
+cutoff-scheme            = Verlet
+nstlist                  = 20
+ns_type                  = grid
+pbc                      = xyz
+verlet-buffer-tolerance  = 0.005
+
+coulombtype              = reaction-field 
+rcoulomb                 = 1.1
+epsilon_r                = 15
+epsilon_rf               = 0
+vdw_type                 = cutoff  
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.1
