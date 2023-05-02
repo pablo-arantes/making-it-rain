@@ -1,0 +1,602 @@
+;;;;;; AMINO ACIDS -- VERSION 2.2P 
+;
+; S.J. Marrink, 16-06-2008.
+;
+; version 04-07-2012 - changed BAS to BB, SID to SC1, DdJ.
+; version 2.2P, 05-12-2012, update by DdJ
+; version 22-9-2010 - fix in charge group numbers for TRP
+;
+; To generate a complete protein topology, use the martinize.py script.
+;
+; please cite:
+;
+; D.H. de Jong, G. Singh, W.F.D. Bennet, C. Arnarez, T.A. Wassenaar, L.V. Schafer,
+; X. Periole, D.P. Tieleman, S.J. Marrink.
+; Improved Parameters for the Martini Coarse-Grained Protein Force Field
+; J. Chem. Theory Comput., DOI: 10.1021/ct300646g
+;
+; &
+;
+; L. Monticelli, S. Kandasamy, X. Periole, R. Larson, D.P. Tieleman, S.J. Marrink.
+; The MARTINI forcefield: Extension to peptides and proteins.
+; J. Chem. Th. Comp., 4:819-834, 2008.
+;
+;
+; BACKBONE
+; the backbone of the amino acids consist of one particle, which represents
+; the center-of-mass of the NH2-Calpha-C=O unit. 
+; For a single aminoacid, the backbone is very polar
+; and is represented by a "P5" particle.
+
+; However: as part of a secondary structure element inside a peptide or
+; protein a particle type of reduced polarity should be used. For details
+; see the original publications.
+
+; SIDECHAIN GEOMETRY
+; most amino acids except GLY and ALA have at least one site representing
+; the side chain. The backbone-sidechain distance was estimated from 
+; the underlying atomistic structure and thus reflects the size of the 
+; amino acid quite accurately. Most side chains are attached to the
+; backbone with weak bonds to mimic flexibility of the underlying structure.
+; A few attachments are stiffer and are modeled by constraints.
+
+
+;;; GLYCINE
+
+[ moleculetype ]
+; molname       nrexcl
+GLY                1			
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P5   1     GLY    BB     1      0      
+
+
+;;; ALANINE
+
+[ moleculetype ]
+; molname       nrexcl
+ALA                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P4    1     ALA    BB     1      0     ; ALA slightly less polar 
+
+
+;;; CYSTEINE
+
+[ moleculetype ]
+; molname       nrexcl
+CYS                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P5     1   CYS    BB     1      0
+ 2   C5     1   CYS    SC1    2      0     
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.31     7500        
+
+
+;;; VALINE
+
+[ moleculetype ]
+; molname       nrexcl
+VAL                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P5   1     VAL     BB     1      0    
+ 2   C2   1     VAL     SC1    2      0    
+
+[constraints]
+;  i     j   funct   length  
+   1     2    1       0.265       
+
+
+;;; LEUCINE
+
+[ moleculetype ]
+; molname       nrexcl
+LEU                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P5   1     LEU     BB     1      0    
+ 2   C1   1     LEU     SC1    2      0    
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.33     7500    
+
+
+;;; ISOLEUCINE
+
+[ moleculetype ]
+; molname       nrexcl
+ILE                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P5   1     ILE     BB     1      0    
+ 2   C1   1     ILE     SC1    2      0    
+
+[constraints]
+;  i     j   funct   length  
+   1     2    1       0.31       
+
+
+;;; METHIONINE
+
+[ moleculetype ]
+; molname       nrexcl
+MET                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P5   1     MET     BB     1      0    
+ 2   C5   1     MET     SC1    2      0     
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.40     2500
+
+
+;;; PROLINE
+
+[ moleculetype ]
+; molname       nrexcl
+PRO                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P5   1     PRO     BB     1      0    
+ 2   C3   1     PRO     SC1    2      0    
+
+[bonds]
+;  i     j   funct   length  force.c.
+  1     2    1       0.30     7500
+
+
+;;; ASPARAGINE
+
+[ moleculetype ]
+; molname       nrexcl
+ASN                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge  mass
+ 1   P5    1     ASN     BB     1      0  72
+ 2   Nda   1     ASN     SC1    2      0  0 
+ 3   D     1     ASN     SC2    3  +0.46  36
+ 4   D     1     ASN     SC3    4  -0.46  36
+
+[virtual_sites2]
+; Site from       funct a
+   2     3    4   1     0.5
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.32     5000
+
+[constraints]
+;  i     j   funct   length 
+   3     4    1       0.28   
+
+;;; GLUTAMINE
+
+[ moleculetype ]
+; molname       nrexcl
+GLN                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge  mass
+ 1   P5    1     GLN     BB     1      0  72
+ 2   Nda   1     GLN     SC1    2      0  0
+ 3   D     1     GLN     SC2    3  +0.46  36
+ 4   D     1     GLN     SC3    4  -0.46  36
+
+[virtual_sites2]
+; Site from       funct a
+   2     3    4   1     0.5
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.40     5000     
+
+[constraints]
+;  i     j   funct   length 
+   3     4    1       0.28   
+
+;;; ASPARTATE
+
+[ moleculetype ]
+; molname       nrexcl
+ASP                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge  mass
+ 1   P5     1     ASP     BB     1     0  72
+ 2   Qa     1     ASP     SC1    2     0  36
+ 3   D      1     ASP     SC2    3  -1.0  36
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.32     7500
+
+[constraints]
+;  i     j   funct   length 
+   2     3    1       0.11   
+
+;;; ASPARTATE - NEUTRAL FORM
+
+[ moleculetype ]
+; molname       nrexcl
+ASP0               1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P5     1     ASP0    BB     1      0    
+ 2   P3     1     ASP0    SC1    2      0    
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.32     7500
+
+
+;;; GLUTAMATE
+
+[ moleculetype ]
+; molname       nrexcl
+GLU                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge mass
+ 1   P5     1     GLU     BB     1     0 72 
+ 2   Qa     1     GLU     SC1    2     0 36 
+ 3   D      1     GLU     SC2    3  -1.0 36 
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.40     5000     
+
+[constraints]
+;  i     j   funct   length 
+   2     3    1       0.11   
+
+;;; GLUTAMATE - NEUTRAl FORM
+
+[ moleculetype ]
+; molname       nrexcl
+GLU0               1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P5     1     GLU0    BB     1      0    
+ 2   P1     1     GLU0    SC1    2      0    
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.40     5000    
+
+
+;;; THREONINE
+
+[ moleculetype ]
+; molname       nrexcl
+THR                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge    mass
+1   P5     1     THR     BB     1      0    72
+2   Nda    1     THR     SC1    2      0    0
+3   D      1     THR     SC2    3  +0.31    36
+4   D      1     THR     SC3    4  -0.31    36
+
+[virtual_sites2]
+; Site from       funct a
+   2     3    4   1     0.5
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.26     9000
+
+[constraints]
+;  i     j   funct   length 
+   3     4    1       0.28   
+
+;;; SERINE
+
+[ moleculetype ]
+; molname       nrexcl
+SER                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge    mass
+1   P5     1    SER     BB     1      0     72
+2   N0     1    SER     SC1    2      0     0
+3   D      1    SER     SC2    3  +0.40     36
+4   D      1    SER     SC3    4  -0.40     36
+
+[virtual_sites2]
+; Site from       funct a
+   2     3    4   1     0.5
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.25     7500
+
+[constraints]
+;  i     j   funct   length 
+   3     4    1       0.28   
+
+;;; LYSCNE 
+
+[ moleculetype ]
+; molname       nrexcl
+LYS                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge  mass
+ 1   P5    1     LYS     BB     1      0  72
+ 2   C3    1     LYS     SC1    2      0  72
+ 3   Qd    1     LYS     SC2    3      0  36
+ 4   D     1     LYS     SC3    4    1.0  36
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.33     5000      
+   2     3    1       0.28     5000  
+
+[constraints]
+;  i     j   funct   length 
+   3     4    1       0.11   
+
+[angles]
+;  i     j    k     funct   angle  force.c.
+    1     2    3       2   180.000    25.0      
+
+
+;;; LYSCNE - NEUTRAL FORM
+
+[ moleculetype ]
+; molname       nrexcl
+LYS0               1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+ 1   P5    1     LYS     BB     1      0    
+ 2   C3    1     LYS     SC1    2      0    
+ 3   P1    1     LYS     SC2    3      0    
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.33     5000      
+   2     3    1       0.28     5000  
+
+[angles]
+;  i     j    k     funct   angle  force.c.
+    1     2    3       2   180.000    25.0      
+
+
+;;; ARGININE 
+
+[ moleculetype ]
+; molname       nrexcl
+ARG                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge  mass
+1   P5     1     ARG     BB     1      0  72
+2   N0     1     ARG     SC1    2      0  72
+3   Qd     1     ARG     SC2    3      0  36
+4   D      1     ARG     SC3    4    1.0  36
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.33     5000   
+   2     3    1       0.34     5000  
+
+[constraints]
+;  i     j   funct   length 
+   3     4    1       0.11   
+
+[angles]
+;  i     j    k     funct   angle  force.c.
+    1     2    3       2   180.000    25.0      
+
+
+;; ARGININE - NEUTRAL FORM
+
+[ moleculetype ]
+; molname       nrexcl
+ARG0               1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+1   P5     1     ARG0    BB     1      0    
+2   N0     1     ARG0    SC1    2      0    
+3   P4     1     ARG0    SC2    3      0    
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.33     5000       
+   2     3    1       0.34     5000     
+
+[angles]
+;  i     j    k     funct   angle  force.c.
+    1     2    3       2   180.000    25.0      
+
+
+;;; HISTIDINE 
+
+[ moleculetype ]
+;molname       nrexcl
+HIS                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+1   P5     1     HIS     BB     1      0    
+2   SC4    1     HIS     SC1    2    0    ; three side chains in triangle
+3   SP1    1     HIS     SC2    3    0    ; configuration, mimicking
+4   SP1    1     HIS     SC3    4    0    ; ring structure
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.32     7500 
+
+[constraints]
+;  i     j   funct   length  
+   2     3    1       0.27    
+   2     4    1       0.27   
+   3     4    1       0.27  
+
+[angles]
+;  i     j    k     funct   angle  force.c.
+    1     2    3       2   150.000   50.0  
+    1     2    4       2   150.000   50.0 
+
+[dihedrals]
+;  i     j    k    l   funct   angle  force.c.
+   1     3    4    2       2    0.0    50.0     ; to prevent backflipping of ring
+
+;;; HISTIDINE, charged.
+
+[ moleculetype ]
+;molname       nrexcl
+HISH               1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge  mass
+1   P5     1     HIS     BB     1    0    72
+2   SC4    1     HIS     SC1    2    0    72 ; three side chains in triangle
+3   SP1    1     HIS     SC2    3    0    72 ; configuration, mimicking
+4   SQd    1     HIS     SC3    4    0    36 ; ring structure
+5   D      1     HIS     SC4    5  1.0    36
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.32     7500 
+
+[constraints]
+;  i     j   funct   length  
+   2     3    1       0.27    
+   2     4    1       0.27   
+   3     4    1       0.27  
+   4     5    1       0.11  
+
+[angles]
+;  i     j    k     funct   angle  force.c.
+    1     2    3       2   150.000   50.0  
+    1     2    4       2   150.000   50.0 
+
+[dihedrals]
+;  i     j    k    l   funct   angle  force.c.
+   1     3    4    2       2    0.0    50.0     ; to prevent backflipping of ring
+
+
+;;; PHENYLALANINE
+
+[ moleculetype ]
+; molname       nrexcl
+PHE                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+1   P5     1     PHE     BB     1    0
+2   SC5    1     PHE     SC1    2    0    ; three side chains in triangle
+3   SC5    1     PHE     SC2    3    0    ; configuration, mimicking
+4   SC5    1     PHE     SC3    4    0    ; ring structure
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.31     7500 	
+
+[constraints]
+;  i     j   funct   length  
+   2     3    1       0.27     
+   2     4    1       0.27    
+   3     4    1       0.27   
+
+[angles]
+;  i     j    k     funct   angle  force.c.
+    1     2    3       2   150.000   50.0  
+    1     2    4       2   150.000   50.0 
+
+[dihedrals]
+;  i     j    k    l   funct   angle  force.c.
+   1     3    4    2       2    0.0    50.0     ; to prevent backflipping of ring
+
+
+;;; TYROSCNE
+
+[ moleculetype ]
+; molname       nrexcl
+TYR                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+1   P5     1     TYR     BB     1    0
+2   SC4    1     TYR     SC1    2    0  
+3   SC4    1     TYR     SC2    3    0 
+4   SP1    1     TYR     SC3    4    0  
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.32     5000 	
+
+[constraints]
+;  i     j   funct   length  
+   2     3    1       0.27     
+   2     4    1       0.27    
+   3     4    1       0.27   
+
+[angles]
+;  i     j    k     funct   angle  force.c.
+    1     2    3       2   150.000   50.0  
+    1     2    4       2   150.000   50.0 
+
+[dihedrals]
+;  i     j    k    l   funct   angle  force.c.
+   1     3    4    2       2    0.0    50.0     ; to prevent backflipping of ring
+
+
+;;; TRYPTOPHAN
+
+[ moleculetype ]
+;molname       nrexcl
+TRP                1
+
+[ atoms ]
+;id type resnr residu atom cgnr   charge
+1   P5       1     TRP     BB     1    0
+2   SC4      1     TRP     SC1    2    0    
+3   SNd      1     TRP     SC2    3    0
+4   SC5      1     TRP     SC3    4    0
+5   SC5      1     TRP     SC4    5    0
+
+[bonds]
+;  i     j   funct   length  force.c.
+   1     2    1       0.30     5000 	
+
+[constraints]
+;  i     j   funct   length  
+   2     3    1       0.27     
+   3     4    1       0.27    
+   2     4    1       0.27   
+   3     5    1       0.27    
+   4     5    1       0.27   
+
+[angles]
+;  i     j    k     funct   angle  force.c.
+   1     2    3       2   210.000   50.0 
+   1     2    4       2   90.000    50.0  
+
+[dihedrals]
+;  i     j    k    l   funct   angle  force.c.
+   1     3    4    2       2    0.0    50.0     ; to prevent backflipping of ring
+   2     3    5    4       2    0.0    200.0    ; to keep plane fixed
+
+
+
