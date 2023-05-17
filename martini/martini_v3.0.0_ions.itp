@@ -13,21 +13,21 @@
 
 [moleculetype]
 ; molname 	nrexcl
-   NA 		1
+   NA+ 		1
 
 [atoms]
 ;id 	type 	resnr 	residu 	atom 	cgnr 	charge
- 1 	TQ5 	1 	ION 	NA 	1 	1.0 
+ 1 	TQ5 	1 	ION 	NA+ 	1 	1.0 
 
 ;;;;;; Chloride ion
 
 [moleculetype]
 ; molname 	nrexcl
-   CL 		1
+   CL- 		1
 
 [atoms]
 ;id 	type 	resnr 	residu 	atom 	cgnr 	charge 
- 1 	TQ5 	1 	ION 	CL 	1 	-1.0     35.453
+ 1 	TQ5 	1 	ION 	CL- 	1 	-1.0     35.453
 
 ;;;;;; Bromide ion
 
