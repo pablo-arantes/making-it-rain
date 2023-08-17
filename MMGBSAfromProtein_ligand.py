@@ -15,6 +15,8 @@ from openmm.unit import *
 import pytraj as pt
 
 from openbabel import pybel
+from biopandas.pdb import PandasPdb
+import parmed as pmd
 
 import os, fnmatch
 import sys
@@ -32,13 +34,13 @@ parser=argparse.ArgumentParser()
 #@markdown **Important:** The protonation of your ligand is crucial for the correct parameterization of the molecule.
 
 parser.add_argument('--workDir',type=str,
-                    default='./Output/',
+                    default='./',
                     help='')
 parser.add_argument('--protein_file',type=str,
-                    default='./Sample_Data/protein.pdb',
+                    default='Sample_Data/protein.pdb',
                     help='pdb file')
 parser.add_argument('--ligand_file',type=str,
-                    default='./Sample_Data/ligand.pdb',
+                    default='Sample_Data/ligand.pdb',
                     help='pdb file')
 parser.add_argument('--remove_waters',choices=['yes', 'no'],
                     default='yes',
@@ -222,7 +224,6 @@ else:
   # AllChem.MolToMolFile(hmol, (os.path.join(workDir, f"start_min.mol")))
   AllChem.MolToPDBFile(hmol, ligand_pdb2)
   mol_end = mol_with_atom_index(hmol)
-  IPythonConsole.drawMol3D(hmol)
 
 #Fix protein
 f = open(prepareforleap, "w")
