@@ -6,7 +6,7 @@
 + 01May2023: We have fixed the Amber, AlphaFol2+MD and Protei-Ligand notebooks. 
 ```
 
-![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/GraphAbs.png)
+![alt text](https://github.com/mainguyenanhvu/Making-it-rain/blob/main/Media_Resources/GraphAbs.png)
 
 
 ## Hello there!
