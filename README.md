@@ -4,7 +4,7 @@
 ```diff
 + 28Apr2023: We have updated all the notebooks to Python 3.10, everything is working fine
 + 01May2023: We have fixed the Amber, AlphaFol2+MD and Protei-Ligand notebooks.
-- 15Dec2023: Unfortunately, we are experiencing some issues with the Conda installation of the CUDA toolkit. We are working to resolve the issue."
+- 15Dec2023: We are experiencing some issues with the Conda installation of the CUDA toolkit.
 ```
 
 ![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/GraphAbs.png)
