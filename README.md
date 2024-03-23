@@ -41,6 +41,12 @@ The main goal of this work is to demonstrate how to harness the power of cloud-c
 
 ![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/fluxogram_gh.png)
 
+**UPDATE (March 2024)**
+
+11. **Protein-Membrane simulations** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Protein%2BMembranes.ipynb)  - `Using OpenFF to generate the topology and build the simulation box for protein-membrane systems with AMBER force fields.`
+12. **Martini+cg2all** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Martini%2Bcg2all.ipynb)  - `Utilizing Vermouth, the Python library that powers Martinize2, to generate the topology and build the simulation box for protein systems using Martini force fields. Additionally, employing cg2at to predict all-atom trajectories from coarse-grained (CG) representations.`
+13. **AMBER Mutations** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Amber_mutations.ipynb)  - `Performing mutations on protein/nucleic acid systems and utilizing AMBER to generate the topology and build the simulation box.`
+
 
 ## Bugs
 - If you encounter any bugs, please report the issue to https://github.com/pablo-arantes/Making-it-rain/issues
