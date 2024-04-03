@@ -46,7 +46,7 @@ The main goal of this work is to demonstrate how to harness the power of cloud-c
 13. **AMBER Mutations** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Amber_mutations.ipynb)  - `Performing mutations on protein/nucleic acid systems and utilizing AMBER to generate the topology and build the simulation box.`
 
 Tired to "just" run molecular simulations and want to try something new? 
-**Gabriel Monteiro da Silva** ([@GMondaSilva](https://twitter.com/GMondaSilva)) I are thrilled to share a colab notebook for running the subsampled AlphaFold2 approach for predicting protein conformational ensembles. Check it out: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GMdSilva/gms_natcomms_1705932980_data/blob/main/AlphaFold2_Traj_v1.ipynb)
+**Gabriel Monteiro da Silva** ([@GMondaSilva](https://twitter.com/GMondaSilva)) and I are thrilled to share a colab notebook for running the subsampled AlphaFold2 approach for predicting protein conformational ensembles. Check it out: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GMdSilva/gms_natcomms_1705932980_data/blob/main/AlphaFold2_Traj_v1.ipynb)
 
 
 ![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/fluxogram_gh.png)
