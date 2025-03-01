@@ -37,10 +37,15 @@ The main goal of this work is to demonstrate how to harness the power of cloud-c
 12. **Martini+cg2all** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Martini%2Bcg2all.ipynb)  - `Utilizing Vermouth, the Python library that powers Martinize2, to generate the topology and build the simulation box for protein systems using Martini force fields. Additionally, employing cg2at to predict all-atom trajectories from coarse-grained (CG) representations.`
 13. **AMBER Mutations** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/Amber_mutations.ipynb)  - `Performing mutations on protein/nucleic acid systems and utilizing AMBER to generate the topology and build the simulation box.`
 
-Want to try MD simulation on NAMD using Google Colab? [**Mostafa Sayed**](https://github.com/mabdelmaksoud53) create a colab notebook for running MD simulations using NAMD and CHARMM-GUI inputs. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mabdelmaksoud53/Colab_NAMD_Suite/blob/main/MD_NAMD.ipynb)
+**UPDATE (March 2025)**
 
-Tired to "just" run molecular simulations and want to try something new? 
-**Gabriel Monteiro da Silva** ([@GMondaSilva](https://twitter.com/GMondaSilva)) and I are thrilled to share a colab notebook for running the subsampled AlphaFold2 approach for predicting protein conformational ensembles. Check it out: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GMdSilva/gms_natcomms_1705932980_data/blob/main/AlphaFold2_Traj_v1.ipynb)
+First, we made MD simulations rain down from the cloud. Now, we’re bringing deep learning into the mix! 
+
+14. **Subsampled AlphaFold2** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GMdSilva/gms_natcomms_1705932980_data/blob/main/AlphaFold2_Traj_v1.ipynb) - `Colab notebook for running the subsampled AlphaFold2 approach for predicting protein conformational ensembles.`
+15. **Biomolecular Emulator** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pablo-arantes/making-it-rain/blob/main/BioEmu.ipynb) - `Biomolecular Emulator (BioEmu), a model that samples from the approximated equilibrium distribution of structures for a protein monomer, given its amino acid sequence.`
+
+
+Want to try MD simulation on NAMD using Google Colab? [**Mostafa Sayed**](https://github.com/mabdelmaksoud53) create a colab notebook for running MD simulations using NAMD and CHARMM-GUI inputs. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mabdelmaksoud53/Colab_NAMD_Suite/blob/main/MD_NAMD.ipynb)
 
 ## Bugs
 - If you encounter any bugs, please report the issue [here](https://github.com/pablo-arantes/Making-it-rain/issues).
