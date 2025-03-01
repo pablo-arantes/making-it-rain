@@ -52,6 +52,7 @@ Want to try MD simulation on NAMD using Google Colab? [**Mostafa Sayed**](https:
 
 ## Acknowledgments
 
+- We would like to thank the [BioEmu](https://github.com/microsoft/bioemu) team for developing an excellent and open source model.
 - We would like to thank the [Psi4](https://psicode.org/) team for developing an excellent and open source suite of ab initio quantum chemistry.
 - We would like to thank the [Roitberg](https://roitberg.chem.ufl.edu/) team for developing the fantastic [TorchANI](https://github.com/aiqm/torchani).
 - We would like to thank the OpenMM team for developing an excellent and open source engine. 
