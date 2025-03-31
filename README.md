@@ -6,6 +6,7 @@
 + 28Apr2023: We have updated all the notebooks to Python 3.10, everything is working fine
 + 01May2023: We have fixed the Amber, AlphaFol2+MD and Protei-Ligand notebooks.
 + 15Dec2023: We have corrected all the notebooks, and everything should be functioning properly now.
+- 31Mar2025: The AlphaFold2+MD notebook is not working, we are trying to fix the issue.
 ```
 
 ![alt text](https://github.com/pablo-arantes/Making-it-rain/blob/main/GraphAbs.png)
