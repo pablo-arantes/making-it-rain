@@ -83,6 +83,3 @@ Journal of Chemical Information and Modeling 2021. DOI: [10.1021/acs.jcim.1c0099
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5196783.svg)](https://doi.org/10.5281/zenodo.5196783)
 ##
-<a href="https://trackgit.com">
-<img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/ksghbo50inl9a2at7yks" alt="trackgit-views" />
-</a>
